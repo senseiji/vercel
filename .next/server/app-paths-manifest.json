@@ -1,0 +1,8 @@
+{
+  "/blogs/page": "app/blogs/page.js",
+  "/page": "app/page.js",
+  "/courses/agentic-design-patterns/page": "app/courses/agentic-design-patterns/page.js",
+  "/attendance/page": "app/attendance/page.js",
+  "/about/page": "app/about/page.js",
+  "/courses/page": "app/courses/page.js"
+}

@@ -1,34 +1,128 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main>
-      <h1 className="text-4xl font-semibold mb-4">Agentic Design Patterns</h1>
+      <h1 className="text-4xl font-semibold mb-4">Welcome to ML Academy</h1>
       <p className="text-lg text-[var(--muted)] mb-6">
-        Build, publish, and evolve your agentic systems guide. Hosted on Vercel, authored in Markdown/TSX, and open to add interactive demos.
+        Master machine learning and AI through hands-on experience. We believe in learning by doing, not just watching.
       </p>
 
-      <div className="grid gap-4 md:grid-cols-2">
-        <div className="card">
-          <h2 className="text-2xl font-semibold mb-2">Read the Introduction (PDF)</h2>
-          <p className="mb-3 text-[var(--muted)]">Download or view your current Introduction PDF.</p>
-          <a className="btn" href="/Introduction.pdf" target="_blank" rel="noreferrer">Open PDF</a>
-        </div>
+      {/* Hero Banner Image */}
+      <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
+        <Image
+          src="/images/banners/growtika-nGoCBxiaRO0-unsplash.jpg"
+          alt="ML Academy - Learn by Doing"
+          width={960}
+          height={400}
+          className="w-full h-64 md:h-80 object-cover"
+          priority
+        />
+      </div>
 
-        <div className="card">
-          <h2 className="text-2xl font-semibold mb-2">Chapters</h2>
-          <p className="mb-3 text-[var(--muted)]">Browse individual pattern pages and chapter stubs.</p>
-          <Link className="btn" href="/chapters">View Chapters</Link>
+      {/* Teaching Methodology Section */}
+      <div className="card mb-6">
+        <h2 className="text-3xl font-semibold mb-4 text-center">How We Teach</h2>
+        <p className="text-lg text-[var(--muted)] mb-6 text-center">
+          Our unique blend of theory and practice ensures you don't just understand concepts—you master them.
+        </p>
+        
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="text-center">
+            <div className="w-16 h-16 mx-auto mb-4 bg-[var(--accent)] rounded-full flex items-center justify-center">
+              <span className="text-2xl">📚</span>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Interactive Lectures</h3>
+            <p className="text-[var(--muted)] text-sm">
+              Engaging presentations that connect theory to real-world applications
+            </p>
+          </div>
+          
+          <div className="text-center">
+            <div className="w-16 h-16 mx-auto mb-4 bg-[var(--accent)] rounded-full flex items-center justify-center">
+              <span className="text-2xl">📝</span>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">In-Depth Articles</h3>
+            <p className="text-[var(--muted)] text-sm">
+              Comprehensive written materials that you can reference anytime
+            </p>
+          </div>
+          
+          <div className="text-center">
+            <div className="w-16 h-16 mx-auto mb-4 bg-[var(--accent)] rounded-full flex items-center justify-center">
+              <span className="text-2xl">💻</span>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Hands-On Coding</h3>
+            <p className="text-[var(--muted)] text-sm">
+              Build real projects and implement algorithms from scratch
+            </p>
+          </div>
+          
+          <div className="text-center">
+            <div className="w-16 h-16 mx-auto mb-4 bg-[var(--accent)] rounded-full flex items-center justify-center">
+              <span className="text-2xl">❓</span>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Live Q&A</h3>
+            <p className="text-[var(--muted)] text-sm">
+              Get your questions answered by experts in real-time
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="card mt-6">
-        <h2 className="text-xl font-semibold mb-2">How to update content</h2>
-        <ol className="list-decimal ml-6 space-y-2 text-[var(--muted)]">
-          <li>Replace <code>/public/Introduction.pdf</code> with a new export of your intro.</li>
-          <li>Edit chapter stubs under <code>/app/chapters</code> or add more pages.</li>
-          <li>Commit to GitHub; Vercel auto-deploys a new version.</li>
-        </ol>
+      {/* Featured Courses */}
+      <div className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">Featured Courses</h2>
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="card">
+            <h3 className="text-2xl font-semibold mb-2">Agentic Design Patterns</h3>
+            <p className="mb-3 text-[var(--muted)]">
+              Master the art of building intelligent, autonomous systems that can reason, plan, and act independently.
+            </p>
+            <div className="mb-3">
+              <span className="inline-block bg-[var(--accent)] text-[#0b0f17] px-2 py-1 rounded text-xs font-semibold mr-2">Advanced</span>
+              <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-2 py-1 rounded text-xs">12 weeks</span>
+            </div>
+            <Link className="btn" href="/courses/agentic-design-patterns">Start Learning</Link>
+          </div>
+
+          <div className="card">
+            <h3 className="text-2xl font-semibold mb-2">More Courses Coming Soon</h3>
+            <p className="mb-3 text-[var(--muted)]">
+              We're developing comprehensive courses on deep learning, computer vision, NLP, and more.
+            </p>
+            <div className="mb-3">
+              <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-2 py-1 rounded text-xs">Coming 2025</span>
+            </div>
+            <Link className="btn" href="/courses">Browse All Courses</Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Why Choose ML Academy */}
+      <div className="card mb-6">
+        <h2 className="text-2xl font-semibold mb-4">Why Choose ML Academy?</h2>
+        <div className="grid gap-6 md:grid-cols-2">
+          <div>
+            <h3 className="text-lg font-semibold mb-3 text-[var(--accent)]">Learn by Doing</h3>
+            <ul className="space-y-2 text-[var(--muted)]">
+              <li>• Build real projects, not just follow tutorials</li>
+              <li>• Implement algorithms from first principles</li>
+              <li>• Work on industry-relevant problems</li>
+              <li>• Deploy your models to production</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-3 text-[var(--accent)]">Comprehensive Support</h3>
+            <ul className="space-y-2 text-[var(--muted)]">
+              <li>• Expert instructors with industry experience</li>
+              <li>• Active community of learners and practitioners</li>
+              <li>• Regular live sessions and office hours</li>
+              <li>• Personalized feedback on your projects</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </main>
   );
