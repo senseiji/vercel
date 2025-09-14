@@ -23,30 +23,17 @@ export default function About() {
                 <h3 className="text-xl font-semibold mb-3 text-[var(--accent)]">Venkatesh Tadinada - Chief Instructor</h3>
                 <div className="text-[var(--muted)] space-y-4">
                   <p>
-                    Venkatesh Tadinada is passionate about data. "In God we trust, all others bring data," said Edward Deming, 
-                    a philosophy that drives his work with Fortune 100 companies. For the last 25 years, he has been at the 
-                    forefront of data innovation, working across various domains and technologies with DATA as a central theme.
+                    Venkatesh Tadinada is passionate about data, driven by Edward Deming's philosophy: "In God we trust, all others bring data." 
+                    For 25 years, he has been at the forefront of data innovation with Fortune 100 companies.
                   </p>
                   <p>
-                    As a strategic AI consultant to Fortune 100 companies, Venkatesh defines and implements AI strategies that 
-                    transform business operations. His journey from Data Warehouses to Data Mining, Business Intelligence, and 
-                    now Machine Learning, Deep Learning & AI, positions him uniquely to architect enterprise-scale solutions.
+                    As a strategic AI consultant, he defines and implements AI strategies that transform business operations. 
+                    His journey from Data Warehouses to Machine Learning and AI positions him uniquely to architect enterprise-scale solutions.
                   </p>
                   <p>
-                    His AI products and solutions are currently deployed across major corporations in the semiconductor and 
-                    pharmaceutical industries, delivering measurable impact by saving millions of dollars and dramatically 
-                    improving operational efficiencies. These implementations have revolutionized how these companies approach 
-                    predictive analytics and decision-making processes.
-                  </p>
-                  <p>
-                    Venkatesh has successfully co-founded and exited multiple startups, including a Business Intelligence 
-                    platform for Enterprises and an Insurance sector product. With a Masters in Computer Science and an MBA, 
-                    he combines deep technical expertise with strategic business acumen to deliver transformational results.
-                  </p>
-                  <p>
-                    Beyond his consulting work, Venkatesh is passionate about education and knowledge transfer. He conducts 
-                    advanced workshops in Machine Learning and AI strategy, sharing real-world insights from his Fortune 100 
-                    implementations with aspiring data scientists and business leaders.
+                    His AI solutions are deployed across major semiconductor and pharmaceutical corporations, saving millions of dollars 
+                    and dramatically improving operational efficiencies. Venkatesh has co-founded and exited multiple startups, combining 
+                    his Masters in Computer Science and MBA to deliver transformational results.
                   </p>
                 </div>
               </div>
@@ -69,8 +56,20 @@ export default function About() {
                 <h3 className="text-xl font-semibold mb-3 text-[var(--accent)]">Peeya Iwagoshi - Co-Instructor</h3>
                 <div className="text-[var(--muted)] space-y-4">
                   <p>
-                    Peeya brings complementary expertise to our teaching team, working alongside Venkatesh to deliver 
-                    comprehensive machine learning education that combines theoretical foundations with practical applications.
+                    Peeya is a Senior Cloud Systems Architect with extensive Machine Learning and AI Engineering experience. 
+                    As a GCP Certified Cloud Architect and Data Engineer, she brings deep technical expertise in cloud-native 
+                    AI solutions and scalable system design.
+                  </p>
+                  <p>
+                    A certified PMP, PSM I, ASM, and ASPO, Peeya excels at technical program management of cross-functional teams 
+                    developing solutions under tight deadlines. She works directly with customers to assess needs, gather requirements, 
+                    and translate them into actionable development work.
+                  </p>
+                  <p>
+                    Her leadership experience includes serving as technical VP of a startup, leading SW/HW teams that developed 
+                    world-class products generating over $20 million in new sales. From 10GE transport systems to fleet management 
+                    solutions, Peeya's diverse background in both hardware and software engineering provides unique insights for 
+                    our AI and machine learning curriculum.
                   </p>
                 </div>
               </div>
