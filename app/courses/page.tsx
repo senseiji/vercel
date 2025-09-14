@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,6 +19,15 @@ export default function Courses() {
       <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2">
         {/* Featured Course - Agentic Design Patterns */}
         <div className="card">
+          <div className="mb-4">
+            <Image
+              src="/images/courses/ai_agents.png"
+              alt="Agentic Design Patterns Course"
+              width={500}
+              height={250}
+              className="w-full h-48 object-cover rounded-lg"
+            />
+          </div>
           <div className="mb-4">
             <span className="inline-block bg-[var(--accent)] text-[#0b0f17] px-3 py-1 rounded-full text-sm font-semibold mr-2">Available Now</span>
             <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-3 py-1 rounded-full text-sm">Advanced Level</span>

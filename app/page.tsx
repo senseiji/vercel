@@ -10,16 +10,114 @@ export default function Home() {
         Our personalized approach ensures every student gains practical skills and confidence in AI and cloud computing.
       </p>
 
-      {/* Hero Banner Image */}
-      <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
-        <Image
-          src="/images/banners/growtika-nGoCBxiaRO0-unsplash.jpg"
-          alt="ML Academy - Learn by Doing"
-          width={960}
-          height={400}
-          className="w-full h-64 md:h-80 object-cover"
-          priority
-        />
+      {/* Featured Courses */}
+      <div className="mb-6 -mx-4 px-2">
+        <h2 className="text-3xl font-semibold mb-6 text-center">Featured Courses</h2>
+        <div className="grid gap-3 lg:grid-cols-2 2xl:grid-cols-3">
+          <div className="card">
+            <h3 className="text-2xl font-semibold mb-2">Agentic Design Patterns</h3>
+            <div className="mb-4">
+              <Image
+                src="/images/courses/ai_agents.png"
+                alt="AI Agents Course"
+                width={400}
+                height={200}
+                className="w-full h-48 object-cover rounded-lg"
+              />
+            </div>
+            <p className="mb-3 text-[var(--muted)]">
+              Master the art of building intelligent, autonomous systems that can reason, plan, and act independently.
+            </p>
+            <div className="mb-3">
+              <span className="inline-block bg-[var(--accent)] text-[#0b0f17] px-2 py-1 rounded text-xs font-semibold mr-2">Advanced</span>
+              <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-2 py-1 rounded text-xs">12 weeks</span>
+            </div>
+            <p className="text-sm text-[var(--muted)] mb-3">
+              Based on{" "}
+              <a 
+                href="https://www.amazon.com/Agentic-Design-Patterns-Hands-Intelligent/dp/3032014018/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[var(--accent)] hover:underline"
+              >
+                "Agentic Design Patterns: Hands-On with Intelligent Systems"
+              </a>
+              {" "}by Antonio Gullí
+            </p>
+            <Link className="btn" href="/courses/agentic-design-patterns">Start Learning</Link>
+          </div>
+
+          <div className="card">
+            <h3 className="text-2xl font-semibold mb-2">Build LLM from Scratch</h3>
+            <div className="mb-4">
+              <Image
+                src="/images/courses/llm-from-scratch.png"
+                alt="Build LLM from Scratch Course"
+                width={400}
+                height={200}
+                className="w-full h-48 object-cover rounded-lg"
+              />
+            </div>
+            <p className="mb-3 text-[var(--muted)]">
+              Learn how to create, train, and tweak large language models (LLMs) by building one from the ground up! 
+              Master the complete process from initial design and creation, to pretraining on a general corpus, and fine-tuning for specific tasks.
+            </p>
+            <div className="mb-3">
+              <span className="inline-block bg-[var(--accent)] text-[#0b0f17] px-2 py-1 rounded text-xs font-semibold mr-2">Advanced</span>
+              <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-2 py-1 rounded text-xs mr-2">16 weeks</span>
+              <span className="inline-block bg-orange-500 text-white px-2 py-1 rounded text-xs">Coming Soon</span>
+            </div>
+            <p className="text-sm text-[var(--muted)] mb-3">
+              Based on{" "}
+              <a 
+                href="https://www.amazon.com/Build-Large-Language-Model-Scratch/dp/1633437167/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[var(--accent)] hover:underline"
+              >
+                "Build a Large Language Model (From Scratch)"
+              </a>
+              {" "}by Sebastian Raschka
+            </p>
+            <Link className="btn opacity-75 cursor-not-allowed" href="#">Coming 2025</Link>
+          </div>
+
+          <div className="card">
+            <h3 className="text-2xl font-semibold mb-2">AI Content Creation</h3>
+            <div className="mb-4">
+              <Image
+                src="/images/courses/ai-pipeline.png"
+                alt="AI Content Creation Pipeline"
+                width={400}
+                height={200}
+                className="w-full h-48 object-cover rounded-lg"
+              />
+            </div>
+            <p className="mb-3 text-[var(--muted)]">
+              Master the complete AI-powered content creation workflow from concept to final video. Learn to use ChatGPT, Midjourney, Photoshop, video generation tools, and professional editing software in a seamless pipeline.
+            </p>
+            <div className="mb-3">
+              <span className="inline-block bg-blue-500 text-white px-2 py-1 rounded text-xs font-semibold mr-2">Intermediate</span>
+              <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-2 py-1 rounded text-xs mr-2">10 weeks</span>
+              <span className="inline-block bg-orange-500 text-white px-2 py-1 rounded text-xs">Coming Soon</span>
+            </div>
+            <p className="text-sm text-[var(--muted)] mb-3">
+              Complete pipeline: Moodboard → Image Generation → Video Creation → Professional Editing
+            </p>
+            <p className="text-sm text-[var(--muted)] mb-3">
+              Based on{" "}
+              <a 
+                href="https://www.youtube.com/watch?v=b29YE7mQTvA" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[var(--accent)] hover:underline"
+              >
+                AI Content Creation Pipeline Tutorial
+              </a>
+            </p>
+            <Link className="btn opacity-75 cursor-not-allowed" href="#">Coming 2025</Link>
+          </div>
+        </div>
       </div>
 
       {/* Teaching Methodology Section */}
@@ -68,57 +166,6 @@ export default function Home() {
             <p className="text-[var(--muted)] text-sm">
               Get your questions answered by experts in real-time
             </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Featured Courses */}
-      <div className="mb-6">
-        <h2 className="text-2xl font-semibold mb-4">Featured Courses</h2>
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <div className="card">
-            <h3 className="text-2xl font-semibold mb-2">Agentic Design Patterns</h3>
-            <p className="mb-3 text-[var(--muted)]">
-              Master the art of building intelligent, autonomous systems that can reason, plan, and act independently.
-            </p>
-            <div className="mb-3">
-              <span className="inline-block bg-[var(--accent)] text-[#0b0f17] px-2 py-1 rounded text-xs font-semibold mr-2">Advanced</span>
-              <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-2 py-1 rounded text-xs">12 weeks</span>
-            </div>
-            <Link className="btn" href="/courses/agentic-design-patterns">Start Learning</Link>
-          </div>
-
-          <div className="card">
-            <h3 className="text-2xl font-semibold mb-2">Build LLM from Scratch</h3>
-            <p className="mb-3 text-[var(--muted)]">
-              Learn how to create, train, and tweak large language models (LLMs) by building one from the ground up! 
-              Master the complete process from initial design and creation, to pretraining on a general corpus, and fine-tuning for specific tasks.
-            </p>
-            <div className="mb-3">
-              <span className="inline-block bg-[var(--accent)] text-[#0b0f17] px-2 py-1 rounded text-xs font-semibold mr-2">Advanced</span>
-              <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-2 py-1 rounded text-xs mr-2">16 weeks</span>
-              <span className="inline-block bg-orange-500 text-white px-2 py-1 rounded text-xs">Coming Soon</span>
-            </div>
-            <p className="text-sm text-[var(--muted)] mb-3">
-              Based on "Build a Large Language Model (From Scratch)" by Sebastian Raschka
-            </p>
-            <Link className="btn opacity-75 cursor-not-allowed" href="#">Coming 2025</Link>
-          </div>
-
-          <div className="card">
-            <h3 className="text-2xl font-semibold mb-2">AI Content Creation Pipeline</h3>
-            <p className="mb-3 text-[var(--muted)]">
-              Master the complete AI-powered content creation workflow from concept to final video. Learn to use ChatGPT, Midjourney, Photoshop, video generation tools, and professional editing software in a seamless pipeline.
-            </p>
-            <div className="mb-3">
-              <span className="inline-block bg-blue-500 text-white px-2 py-1 rounded text-xs font-semibold mr-2">Intermediate</span>
-              <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-2 py-1 rounded text-xs mr-2">10 weeks</span>
-              <span className="inline-block bg-orange-500 text-white px-2 py-1 rounded text-xs">Coming Soon</span>
-            </div>
-            <p className="text-sm text-[var(--muted)] mb-3">
-              Complete pipeline: Moodboard → Image Generation → Video Creation → Professional Editing
-            </p>
-            <Link className="btn opacity-75 cursor-not-allowed" href="#">Coming 2025</Link>
           </div>
         </div>
       </div>

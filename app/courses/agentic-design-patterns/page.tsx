@@ -12,8 +12,8 @@ export default function AgenticDesignPatterns() {
       {/* Course Banner Image */}
       <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
         <Image
-          src="/images/banners/growtika-nGoCBxiaRO0-unsplash.jpg"
-          alt="Agentic Design Patterns Course"
+          src="/images/courses/ai_agents.png"
+          alt="Agentic Design Patterns Course - AI Agents"
           width={960}
           height={400}
           className="w-full h-64 md:h-80 object-cover"
