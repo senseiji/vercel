@@ -34,19 +34,25 @@ export default function Navbar() {
             <div className="ml-10 flex items-baseline space-x-8">
               <Link 
                 href="/courses" 
-                className="text-gray-700 hover:text-[#76a9fa] px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-[#76a9fa] px-3 py-2 text-lg font-medium transition-colors"
               >
                 Courses
               </Link>
               <Link 
+                href="/schedule" 
+                className="text-gray-700 hover:text-[#76a9fa] px-3 py-2 text-lg font-medium transition-colors"
+              >
+                Schedule
+              </Link>
+              <Link 
                 href="/blogs" 
-                className="text-gray-700 hover:text-[#76a9fa] px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-[#76a9fa] px-3 py-2 text-lg font-medium transition-colors"
               >
                 Blogs
               </Link>
               <Link 
                 href="/about" 
-                className="text-gray-700 hover:text-[#76a9fa] px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-700 hover:text-[#76a9fa] px-3 py-2 text-lg font-medium transition-colors"
               >
                 About Us
               </Link>
@@ -91,21 +97,28 @@ export default function Navbar() {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
           <Link
             href="/courses"
-            className="text-gray-700 hover:text-[#76a9fa] hover:bg-gray-100 block px-3 py-2 text-base font-medium rounded-md transition-colors"
+            className="text-gray-700 hover:text-[#76a9fa] hover:bg-gray-100 block px-3 py-2 text-xl font-medium rounded-md transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             Courses
           </Link>
           <Link
+            href="/schedule"
+            className="text-gray-700 hover:text-[#76a9fa] hover:bg-gray-100 block px-3 py-2 text-xl font-medium rounded-md transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Schedule
+          </Link>
+          <Link
             href="/blogs"
-            className="text-gray-700 hover:text-[#76a9fa] hover:bg-gray-100 block px-3 py-2 text-base font-medium rounded-md transition-colors"
+            className="text-gray-700 hover:text-[#76a9fa] hover:bg-gray-100 block px-3 py-2 text-xl font-medium rounded-md transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             Blogs
           </Link>
           <Link
             href="/about"
-            className="text-gray-700 hover:text-[#76a9fa] hover:bg-gray-100 block px-3 py-2 text-base font-medium rounded-md transition-colors"
+            className="text-gray-700 hover:text-[#76a9fa] hover:bg-gray-100 block px-3 py-2 text-xl font-medium rounded-md transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
             About Us

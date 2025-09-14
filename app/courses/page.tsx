@@ -19,7 +19,9 @@ export default function Courses() {
       <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2">
         {/* Featured Course - Agentic Design Patterns */}
         <div className="card">
-          <h2 className="text-2xl font-semibold mb-3">Agentic Design Patterns</h2>
+          <Link href="/courses/agentic-design-patterns">
+            <h2 className="text-2xl font-semibold mb-3 text-[var(--accent)] hover:underline cursor-pointer">Agentic Design Patterns</h2>
+          </Link>
           <div className="mb-4">
             <span className="inline-block bg-[var(--accent)] text-[#0b0f17] px-3 py-1 rounded-full text-sm font-semibold mr-2">Available Now</span>
             <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-3 py-1 rounded-full text-sm">Advanced Level</span>
@@ -65,12 +67,15 @@ export default function Courses() {
           <div className="flex space-x-3">
             <Link className="btn" href="/courses/agentic-design-patterns">Start Learning</Link>
             <a className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/Introduction.pdf" target="_blank" rel="noreferrer">Course Intro PDF</a>
+            <Link className="btn bg-gray-600 text-white hover:bg-gray-700" href="/courses/agentic-design-patterns">More Info</Link>
           </div>
         </div>
 
         {/* Build LLM from Scratch */}
         <div className="card">
-          <h2 className="text-2xl font-semibold mb-3">Build LLM from Scratch</h2>
+          <Link href="/courses/build-llm-from-scratch">
+            <h2 className="text-2xl font-semibold mb-3 text-[var(--accent)] hover:underline cursor-pointer">Build LLM from Scratch</h2>
+          </Link>
           <div className="mb-4">
             <span className="inline-block bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-2">Coming Soon</span>
             <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-3 py-1 rounded-full text-sm">Advanced Level</span>
@@ -113,12 +118,17 @@ export default function Courses() {
             {" "}by Sebastian Raschka
           </p>
           
-          <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
+          <div className="flex space-x-3">
+            <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
+            <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/build-llm-from-scratch">More Info</Link>
+          </div>
         </div>
 
         {/* AI Content Creation Pipeline */}
         <div className="card">
-          <h2 className="text-2xl font-semibold mb-3">AI Content Creation Pipeline</h2>
+          <Link href="/courses/ai-content-creation-pipeline">
+            <h2 className="text-2xl font-semibold mb-3 text-[var(--accent)] hover:underline cursor-pointer">AI Content Creation Pipeline</h2>
+          </Link>
           <div className="mb-4">
             <span className="inline-block bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-2">Coming Soon</span>
             <span className="inline-block bg-blue-500 text-white px-3 py-1 rounded-full text-sm">Intermediate Level</span>
@@ -163,21 +173,27 @@ export default function Courses() {
             </a>
           </p>
           
-          <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
+          <div className="flex space-x-3">
+            <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
+            <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/ai-content-creation-pipeline">More Info</Link>
+          </div>
         </div>
 
         {/* Natural Language Processing */}
         <div className="card">
+          <Link href="/courses/natural-language-processing">
+            <h2 className="text-2xl font-semibold mb-3 text-[var(--accent)] hover:underline cursor-pointer">Natural Language Processing</h2>
+          </Link>
           <div className="mb-4">
-            <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-3 py-1 rounded-full text-sm">Coming Soon</span>
+            <span className="inline-block bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-2">Coming Soon</span>
+            <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-3 py-1 rounded-full text-sm">Advanced Level</span>
           </div>
-          <h2 className="text-2xl font-semibold mb-3">Natural Language Processing</h2>
           <p className="mb-4 text-[var(--muted)]">
             Dive deep into language models, transformers, and modern NLP techniques. Build applications that understand and generate human language.
           </p>
           
           <div className="mb-4">
-            <h3 className="font-semibold mb-2">Planned Content:</h3>
+            <h3 className="font-semibold mb-2">What You'll Learn:</h3>
             <ul className="text-sm text-[var(--muted)] space-y-1">
               <li>• Text preprocessing and tokenization</li>
               <li>• Transformer architectures and attention</li>
@@ -187,7 +203,82 @@ export default function Courses() {
             </ul>
           </div>
           
-          <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
+          <p className="text-sm text-[var(--muted)] mb-4">
+            <strong>Duration:</strong> 14 weeks
+          </p>
+          
+          <div className="flex space-x-3">
+            <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
+            <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/natural-language-processing">More Info</Link>
+          </div>
+        </div>
+
+        {/* Model Context Protocol (MCP) */}
+        <div className="card">
+          <Link href="/courses/model-context-protocol">
+            <h2 className="text-2xl font-semibold mb-3 text-[var(--accent)] hover:underline cursor-pointer">Model Context Protocol (MCP)</h2>
+          </Link>
+          <div className="mb-4">
+            <span className="inline-block bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-2">Coming Soon</span>
+            <span className="inline-block bg-purple-500 text-white px-3 py-1 rounded-full text-sm">Intermediate Level</span>
+          </div>
+          <p className="mb-4 text-[var(--muted)]">
+            Learn to build powerful AI applications using Anthropic's Model Context Protocol. Master server creation, tool integration, and seamless AI workflows.
+          </p>
+          
+          <div className="mb-4">
+            <h3 className="font-semibold mb-2">What You'll Learn:</h3>
+            <ul className="text-sm text-[var(--muted)] space-y-1">
+              <li>• MCP architecture and protocol fundamentals</li>
+              <li>• Building MCP servers and clients</li>
+              <li>• Tool integration and resource management</li>
+              <li>• Real-time data access and processing</li>
+              <li>• Production deployment strategies</li>
+            </ul>
+          </div>
+          
+          <p className="text-sm text-[var(--muted)] mb-4">
+            <strong>Duration:</strong> 8 weeks
+          </p>
+          
+          <div className="flex space-x-3">
+            <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
+            <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/model-context-protocol">More Info</Link>
+          </div>
+        </div>
+
+        {/* SLM & FineTuning */}
+        <div className="card">
+          <Link href="/courses/slm-finetuning">
+            <h2 className="text-2xl font-semibold mb-3 text-[var(--accent)] hover:underline cursor-pointer">SLM & FineTuning</h2>
+          </Link>
+          <div className="mb-4">
+            <span className="inline-block bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-2">Coming Soon</span>
+            <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-3 py-1 rounded-full text-sm">Advanced Level</span>
+          </div>
+          <p className="mb-4 text-[var(--muted)]">
+            Master Small Language Models (SLMs) and advanced fine-tuning techniques. Learn to create efficient, specialized models for specific tasks and domains.
+          </p>
+          
+          <div className="mb-4">
+            <h3 className="font-semibold mb-2">What You'll Learn:</h3>
+            <ul className="text-sm text-[var(--muted)] space-y-1">
+              <li>• Small language model architectures</li>
+              <li>• Parameter-efficient fine-tuning (PEFT)</li>
+              <li>• LoRA and QLoRA techniques</li>
+              <li>• Domain-specific model adaptation</li>
+              <li>• Model compression and optimization</li>
+            </ul>
+          </div>
+          
+          <p className="text-sm text-[var(--muted)] mb-4">
+            <strong>Duration:</strong> 12 weeks
+          </p>
+          
+          <div className="flex space-x-3">
+            <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
+            <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/slm-finetuning">More Info</Link>
+          </div>
         </div>
       </div>
 

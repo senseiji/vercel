@@ -15,7 +15,9 @@ export default function Home() {
         <h2 className="text-3xl font-semibold mb-6 text-center">Featured Courses</h2>
         <div className="grid gap-3 lg:grid-cols-2 2xl:grid-cols-3">
           <div className="card">
-            <h3 className="text-2xl font-semibold mb-2">Agentic Patterns</h3>
+            <Link href="/courses/agentic-design-patterns">
+              <h3 className="text-2xl font-semibold mb-2 text-[var(--accent)] hover:underline cursor-pointer">Agentic Patterns</h3>
+            </Link>
             <div className="mb-4">
               <Image
                 src="/images/courses/ai_agents.png"
@@ -44,11 +46,16 @@ export default function Home() {
               </a>
               {" "}by Antonio Gullí
             </p>
-            <Link className="btn" href="/courses/agentic-design-patterns">Start Learning</Link>
+            <div className="flex space-x-3">
+              <Link className="btn" href="/courses/agentic-design-patterns">Start Learning</Link>
+              <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/agentic-design-patterns">More Info</Link>
+            </div>
           </div>
 
           <div className="card">
-            <h3 className="text-2xl font-semibold mb-2">Build LLM from Scratch</h3>
+            <Link href="/courses/build-llm-from-scratch">
+              <h3 className="text-2xl font-semibold mb-2 text-[var(--accent)] hover:underline cursor-pointer">Build LLM from Scratch</h3>
+            </Link>
             <div className="mb-4">
               <Image
                 src="/images/courses/llm-from-scratch.png"
@@ -79,10 +86,16 @@ export default function Home() {
               </a>
               {" "}by Sebastian Raschka
             </p>
+            <div className="flex space-x-3">
+              <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
+              <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/build-llm-from-scratch">More Info</Link>
+            </div>
           </div>
 
           <div className="card">
-            <h3 className="text-2xl font-semibold mb-2">AI Content Creation</h3>
+            <Link href="/courses/ai-content-creation-pipeline">
+              <h3 className="text-2xl font-semibold mb-2 text-[var(--accent)] hover:underline cursor-pointer">AI Content Creation</h3>
+            </Link>
             <div className="mb-4">
               <Image
                 src="/images/courses/ai-pipeline.png"
@@ -114,6 +127,10 @@ export default function Home() {
                 AI Content Creation Pipeline Tutorial
               </a>
             </p>
+            <div className="flex space-x-3">
+              <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
+              <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/ai-content-creation-pipeline">More Info</Link>
+            </div>
           </div>
         </div>
       </div>

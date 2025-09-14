@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import DisqusComments from "../../components/DisqusComments";
 
 export default function AgenticDesignPatterns() {
   return (
@@ -101,6 +102,15 @@ export default function AgenticDesignPatterns() {
           <li>Join our interactive coding sessions and Q&A discussions</li>
           <li>Complete hands-on projects to reinforce your learning</li>
         </ol>
+      </div>
+
+      {/* Disqus Comments */}
+      <div className="mt-8">
+        <DisqusComments
+          url="https://mlacademy.io/courses/agentic-design-patterns"
+          identifier="agentic-design-patterns"
+          title="Agentic Design Patterns"
+        />
       </div>
     </main>
   );
