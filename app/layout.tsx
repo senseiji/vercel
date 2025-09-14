@@ -2,6 +2,7 @@ import "./../styles/globals.css";
 import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Agentic Design Patterns",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Navbar />
         <div className="container">{children}</div>
+        <Analytics />
       </body>
     </html>
   );
