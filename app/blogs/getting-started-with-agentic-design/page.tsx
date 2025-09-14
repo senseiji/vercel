@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import DisqusComments from "../../components/DisqusComments";
 
 export const metadata: Metadata = {
   title: "Getting Started with Agentic Design - ML Academy",
@@ -210,6 +211,13 @@ export default function GettingStartedWithAgenticDesign() {
             </section>
           </div>
         </article>
+
+        {/* Disqus Comments */}
+        <DisqusComments
+          url="https://mlacademy.io/blogs/getting-started-with-agentic-design"
+          identifier="getting-started-with-agentic-design"
+          title="Getting Started with Agentic Design"
+        />
 
         {/* Call to Action */}
         <section className="mt-12 p-8 bg-blue-50 rounded-lg">

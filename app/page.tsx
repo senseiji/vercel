@@ -15,7 +15,7 @@ export default function Home() {
         <h2 className="text-3xl font-semibold mb-6 text-center">Featured Courses</h2>
         <div className="grid gap-3 lg:grid-cols-2 2xl:grid-cols-3">
           <div className="card">
-            <h3 className="text-2xl font-semibold mb-2">Agentic Design Patterns</h3>
+            <h3 className="text-2xl font-semibold mb-2">Agentic Patterns</h3>
             <div className="mb-4">
               <Image
                 src="/images/courses/ai_agents.png"
@@ -79,7 +79,6 @@ export default function Home() {
               </a>
               {" "}by Sebastian Raschka
             </p>
-            <Link className="btn opacity-75 cursor-not-allowed" href="#">Coming 2025</Link>
           </div>
 
           <div className="card">
@@ -115,7 +114,6 @@ export default function Home() {
                 AI Content Creation Pipeline Tutorial
               </a>
             </p>
-            <Link className="btn opacity-75 cursor-not-allowed" href="#">Coming 2025</Link>
           </div>
         </div>
       </div>
