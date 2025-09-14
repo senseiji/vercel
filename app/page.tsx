@@ -4,9 +4,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <h1 className="text-4xl font-semibold mb-4">Welcome to ML Academy</h1>
-      <p className="text-lg text-[var(--muted)] mb-6">
-        Master machine learning and AI through hands-on experience. We believe in learning by doing, not just watching.
+      <h1 className="text-4xl font-semibold mb-4 text-center">Building Careers in AI Cloud</h1>
+      <p className="text-lg text-[var(--muted)] mb-6 text-center">
+        We teach young and old alike to master new technologies through one-on-one attention and hands-on learning. 
+        Our personalized approach ensures every student gains practical skills and confidence in AI and cloud computing.
       </p>
 
       {/* Hero Banner Image */}
