@@ -19,6 +19,11 @@ export default function Courses() {
       <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2">
         {/* Featured Course - Agentic Design Patterns */}
         <div className="card">
+          <h2 className="text-2xl font-semibold mb-3">Agentic Design Patterns</h2>
+          <div className="mb-4">
+            <span className="inline-block bg-[var(--accent)] text-[#0b0f17] px-3 py-1 rounded-full text-sm font-semibold mr-2">Available Now</span>
+            <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-3 py-1 rounded-full text-sm">Advanced Level</span>
+          </div>
           <div className="mb-4">
             <Image
               src="/images/courses/ai_agents.png"
@@ -28,11 +33,6 @@ export default function Courses() {
               className="w-full h-48 object-cover rounded-lg"
             />
           </div>
-          <div className="mb-4">
-            <span className="inline-block bg-[var(--accent)] text-[#0b0f17] px-3 py-1 rounded-full text-sm font-semibold mr-2">Available Now</span>
-            <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-3 py-1 rounded-full text-sm">Advanced Level</span>
-          </div>
-          <h2 className="text-2xl font-semibold mb-3">Agentic Design Patterns</h2>
           <p className="mb-4 text-[var(--muted)]">
             Master the art of building intelligent, autonomous systems that can reason, plan, and act independently. 
             This comprehensive course covers everything from basic agent architectures to complex multi-agent systems.
@@ -49,6 +49,19 @@ export default function Courses() {
             </ul>
           </div>
           
+          <p className="text-sm text-[var(--muted)] mb-4">
+            <strong>Based on:</strong>{" "}
+            <a 
+              href="https://www.amazon.com/Agentic-Design-Patterns-Hands-Intelligent/dp/3032014018/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[var(--accent)] hover:underline"
+            >
+              "Agentic Design Patterns: Hands-On with Intelligent Systems"
+            </a>
+            {" "}by Antonio Gullí
+          </p>
+          
           <div className="flex space-x-3">
             <Link className="btn" href="/courses/agentic-design-patterns">Start Learning</Link>
             <a className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/Introduction.pdf" target="_blank" rel="noreferrer">Course Intro PDF</a>
@@ -57,11 +70,20 @@ export default function Courses() {
 
         {/* Build LLM from Scratch */}
         <div className="card">
+          <h2 className="text-2xl font-semibold mb-3">Build LLM from Scratch</h2>
           <div className="mb-4">
             <span className="inline-block bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-2">Coming Soon</span>
             <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-3 py-1 rounded-full text-sm">Advanced Level</span>
           </div>
-          <h2 className="text-2xl font-semibold mb-3">Build LLM from Scratch</h2>
+          <div className="mb-4">
+            <Image
+              src="/images/courses/llm-from-scratch.png"
+              alt="Build LLM from Scratch Course"
+              width={500}
+              height={250}
+              className="w-full h-48 object-cover rounded-lg"
+            />
+          </div>
           <p className="mb-4 text-[var(--muted)]">
             Learn how to create, train, and tweak large language models (LLMs) by building one from the ground up! 
             Master the complete process from initial design and creation, to pretraining on a general corpus, and fine-tuning for specific tasks.
@@ -79,7 +101,16 @@ export default function Courses() {
           </div>
           
           <p className="text-sm text-[var(--muted)] mb-4">
-            <strong>Based on:</strong> "Build a Large Language Model (From Scratch)" by Sebastian Raschka
+            <strong>Based on:</strong>{" "}
+            <a 
+              href="https://www.amazon.com/Build-Large-Language-Model-Scratch/dp/1633437167/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[var(--accent)] hover:underline"
+            >
+              "Build a Large Language Model (From Scratch)"
+            </a>
+            {" "}by Sebastian Raschka
           </p>
           
           <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
@@ -87,11 +118,20 @@ export default function Courses() {
 
         {/* AI Content Creation Pipeline */}
         <div className="card">
+          <h2 className="text-2xl font-semibold mb-3">AI Content Creation Pipeline</h2>
           <div className="mb-4">
             <span className="inline-block bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-2">Coming Soon</span>
             <span className="inline-block bg-blue-500 text-white px-3 py-1 rounded-full text-sm">Intermediate Level</span>
           </div>
-          <h2 className="text-2xl font-semibold mb-3">AI Content Creation Pipeline</h2>
+          <div className="mb-4">
+            <Image
+              src="/images/courses/ai-pipeline.png"
+              alt="AI Content Creation Pipeline Course"
+              width={500}
+              height={250}
+              className="w-full h-48 object-cover rounded-lg"
+            />
+          </div>
           <p className="mb-4 text-[var(--muted)]">
             Master the complete AI-powered content creation workflow from concept to final video. Learn to use ChatGPT, Midjourney, Photoshop, video generation tools, and professional editing software in a seamless pipeline.
           </p>
@@ -109,6 +149,18 @@ export default function Courses() {
           
           <p className="text-sm text-[var(--muted)] mb-4">
             <strong>Duration:</strong> 10 weeks • <strong>Tools Covered:</strong> 8+ Professional Applications
+          </p>
+          
+          <p className="text-sm text-[var(--muted)] mb-4">
+            <strong>Based on:</strong>{" "}
+            <a 
+              href="https://www.youtube.com/watch?v=b29YE7mQTvA" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[var(--accent)] hover:underline"
+            >
+              YouTube Tutorial: AI Content Creation Pipeline
+            </a>
           </p>
           
           <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
