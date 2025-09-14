@@ -24,7 +24,7 @@ export default function DisqusComments({ url, identifier, title }: DisqusComment
     }
 
     // Configure Disqus
-    window.disqus_config = function () {
+    window.disqus_config = function (this: any) {
       this.page.url = url;
       this.page.identifier = identifier;
     };
