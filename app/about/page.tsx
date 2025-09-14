@@ -57,16 +57,16 @@ export default function About() {
                 <div className="text-[var(--muted)] space-y-4">
                   <p>
                     Peeya is a Senior Cloud Systems Architect with extensive Machine Learning and AI Engineering experience. 
-                    As a GCP Certified Cloud Architect and Data Engineer, she brings deep technical expertise in cloud-native 
+                    As a GCP Certified Cloud Architect and Data Engineer, he brings deep technical expertise in cloud-native 
                     AI solutions and scalable system design.
                   </p>
                   <p>
                     A certified PMP, PSM I, ASM, and ASPO, Peeya excels at technical program management of cross-functional teams 
-                    developing solutions under tight deadlines. She works directly with customers to assess needs, gather requirements, 
+                    developing solutions under tight deadlines. He works directly with customers to assess needs, gather requirements, 
                     and translate them into actionable development work.
                   </p>
                   <p>
-                    Her leadership experience includes serving as technical VP of a startup, leading SW/HW teams that developed 
+                    His leadership experience includes serving as technical VP of a startup, leading SW/HW teams that developed 
                     world-class products generating over $20 million in new sales. From 10GE transport systems to fleet management 
                     solutions, Peeya's diverse background in both hardware and software engineering provides unique insights for 
                     our AI and machine learning curriculum.
