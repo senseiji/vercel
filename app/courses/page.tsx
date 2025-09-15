@@ -65,7 +65,12 @@ export default function Courses() {
           </p>
           
           <div className="flex space-x-3">
-            <Link className="btn" href="/courses/agentic-design-patterns">Start Learning</Link>
+            <Link 
+              className="btn !bg-green-600 hover:!bg-green-700 !text-white" 
+              href="/schedule"
+            >
+              Register Now
+            </Link>
             <a className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/Introduction.pdf" target="_blank" rel="noreferrer">Course Intro PDF</a>
             <Link className="btn bg-gray-600 text-white hover:bg-gray-700" href="/courses/agentic-design-patterns">More Info</Link>
           </div>

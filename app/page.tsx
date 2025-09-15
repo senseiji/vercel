@@ -255,8 +255,11 @@ export default function Home() {
             </div>
             
             <div className="flex space-x-3 mt-6">
-              <Link className="btn flex-1 text-center" href="/courses/agentic-design-patterns">
-                Start Learning →
+              <Link 
+                className="btn !bg-green-600 hover:!bg-green-700 !text-white flex-1 text-center" 
+                href="/schedule"
+              >
+                Register Now →
               </Link>
               <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/agentic-design-patterns">
                 Details

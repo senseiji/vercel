@@ -5,10 +5,22 @@ import DisqusComments from "../../components/DisqusComments";
 export default function AgenticDesignPatterns() {
   return (
     <main>
-      <h1 className="text-4xl font-semibold mb-4">Agentic Design Patterns</h1>
-      <p className="text-lg text-[var(--muted)] mb-6">
-        Build, publish, and evolve your agentic systems guide. Master the art of creating intelligent, autonomous systems that can reason, plan, and act independently.
-      </p>
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+        <div>
+          <h1 className="text-4xl font-semibold mb-2 md:mb-0">Agentic Design Patterns</h1>
+          <p className="text-lg text-[var(--muted)]">
+            Build, publish, and evolve your agentic systems guide. Master the art of creating intelligent, autonomous systems that can reason, plan, and act independently.
+          </p>
+        </div>
+        <div className="mt-4 md:mt-0 md:ml-6 flex-shrink-0">
+          <Link 
+            className="btn !bg-green-600 hover:!bg-green-700 !text-white font-semibold px-6 py-3 text-lg inline-flex items-center gap-2"
+            href="/schedule"
+          >
+            🚀 Register Now
+          </Link>
+        </div>
+      </div>
 
       {/* Course Banner Image */}
       <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
@@ -33,6 +45,34 @@ export default function AgenticDesignPatterns() {
           <h2 className="text-2xl font-semibold mb-2">Course Chapters</h2>
           <p className="mb-3 text-[var(--muted)]">Browse individual pattern chapters and hands-on exercises.</p>
           <Link className="btn" href="/chapters">View Chapters</Link>
+        </div>
+      </div>
+
+      {/* Registration Section */}
+      <div className="card mt-6 bg-gradient-to-r from-[var(--accent)]/10 to-[var(--accent)]/5 border-[var(--accent)]/30">
+        <div className="text-center">
+          <h2 className="text-2xl font-semibold mb-3 text-[var(--accent)]">Ready to Start Your AI Agent Journey?</h2>
+          <p className="text-[var(--muted)] mb-4 max-w-2xl mx-auto">
+            Join our comprehensive 12-week course and learn to build production-ready AI agents from industry experts. 
+            Limited seats available!
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+            <Link 
+              className="btn !bg-green-600 hover:!bg-green-700 !text-white font-semibold px-8 py-3 text-lg"
+              href="/schedule"
+            >
+              🚀 Register Now →
+            </Link>
+            <Link 
+              className="btn bg-transparent border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white px-6 py-3"
+              href="/schedule"
+            >
+              📅 View Schedule
+            </Link>
+          </div>
+          <p className="text-sm text-[var(--muted)] mt-4">
+            🗓️ Starts Sept 20, 2025 • ⏰ 12 weeks • 🎓 Expert instruction
+          </p>
         </div>
       </div>
 
