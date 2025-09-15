@@ -7,6 +7,11 @@ import { useState, useEffect } from "react";
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
   
   const heroSlides = [
     {
@@ -20,7 +25,7 @@ export default function Home() {
         { value: "12 weeks", label: "From beginner to job-ready" }
       ],
       primaryCTA: { text: "Start Your AI Journey →", href: "/courses/agentic-design-patterns" },
-      secondaryCTA: { text: "View Schedule", href: "/schedule" }
+      secondaryCTA: { text: "View Schedule", href: "https://gdg.community.dev/events/details/google-gdg-cloud-san-jose-presents-learn-to-build-ai-agents/" }
     },
     {
       badge: "🚀 From zero to AI expert in record time",
@@ -77,16 +82,38 @@ export default function Home() {
   ];
 
   useEffect(() => {
-    if (!isPaused) {
+    if (!isPaused && isClient && typeof window !== 'undefined') {
       const timer = setInterval(() => {
         setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
       }, 5000); // Change slide every 5 seconds
 
       return () => clearInterval(timer);
     }
-  }, [heroSlides.length, isPaused]);
+  }, [heroSlides.length, isPaused, isClient]);
 
   const currentHero = heroSlides[currentSlide];
+
+  if (!isClient) {
+    // Return a loading state or the first slide during SSR
+    return (
+      <main>
+        <div className="text-center mb-16 relative overflow-hidden">
+          <div className="mb-8">
+            <span className="inline-block px-4 py-2 bg-[var(--accent)] text-[#0b0f17] rounded-full text-sm font-semibold mb-6">
+              ✨ Join thousands of professionals who've transformed their careers
+            </span>
+          </div>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            Learn AI Skills That
+            <span className="text-[var(--accent)]"> Actually Matter</span>
+          </h1>
+          <p className="text-xl text-[var(--muted)] mb-8 max-w-3xl mx-auto leading-relaxed">
+            Skip the theory overload. Learn by building real AI systems that solve actual problems. From zero to production-ready in weeks, not years.
+          </p>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main>

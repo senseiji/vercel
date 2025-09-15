@@ -128,9 +128,14 @@ export default function Schedule() {
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       {course.status === "Open for Registration" ? (
-                        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">
+                        <Link 
+                          href="https://gdg.community.dev/events/details/google-gdg-cloud-san-jose-presents-learn-to-build-ai-agents/"
+                          className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors inline-block"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           Register Now
-                        </button>
+                        </Link>
                       ) : (
                         <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
                           {course.status}
