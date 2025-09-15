@@ -35,20 +35,28 @@ export default function DisqusComments({ url, identifier, title }: DisqusComment
       script.src = 'https://mlacademy-1.disqus.com/embed.js';
       script.setAttribute('data-timestamp', (+new Date()).toString());
       (document.head || document.body).appendChild(script);
-    } else if (window.DISQUS) {
+    } else if (window.DISQUS && typeof window.DISQUS.reset === 'function') {
       // Reset Disqus if it's already loaded
-      window.DISQUS.reset({
-        reload: true,
-        config: window.disqus_config,
-      });
+      try {
+        window.DISQUS.reset({
+          reload: true,
+          config: window.disqus_config,
+        });
+      } catch (error) {
+        console.warn('Error resetting Disqus:', error);
+      }
     }
 
     return () => {
-      // Cleanup on unmount
-      if (window.DISQUS) {
-        window.DISQUS.reset({
-          reload: true,
-        });
+      // Cleanup on unmount - add null check
+      if (window.DISQUS && typeof window.DISQUS.reset === 'function') {
+        try {
+          window.DISQUS.reset({
+            reload: true,
+          });
+        } catch (error) {
+          console.warn('Error resetting Disqus:', error);
+        }
       }
     };
   }, [url, identifier, title]);
