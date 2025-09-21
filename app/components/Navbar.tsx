@@ -39,6 +39,12 @@ export default function Navbar() {
                 Courses
               </Link>
               <Link 
+                href="/past-classes" 
+                className="text-gray-700 hover:text-[#76a9fa] px-3 py-2 text-lg font-medium transition-colors"
+              >
+                Past Classes
+              </Link>
+              <Link 
                 href="/schedule" 
                 className="text-gray-700 hover:text-[#76a9fa] px-3 py-2 text-lg font-medium transition-colors"
               >
@@ -101,6 +107,13 @@ export default function Navbar() {
             onClick={() => setIsMenuOpen(false)}
           >
             Courses
+          </Link>
+          <Link
+            href="/past-classes"
+            className="text-gray-700 hover:text-[#76a9fa] hover:bg-gray-100 block px-3 py-2 text-xl font-medium rounded-md transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Past Classes
           </Link>
           <Link
             href="/schedule"

@@ -42,9 +42,9 @@ export default function AgenticDesignPatterns() {
         </div>
 
         <div className="card">
-          <h2 className="text-2xl font-semibold mb-2">Course Chapters</h2>
-          <p className="mb-3 text-[var(--muted)]">Browse individual pattern chapters and hands-on exercises.</p>
-          <Link className="btn" href="/chapters">View Chapters</Link>
+          <h2 className="text-2xl font-semibold mb-2">Past Class Recordings</h2>
+          <p className="mb-3 text-[var(--muted)]">View past class recordings and materials from completed sessions.</p>
+          <Link className="btn" href="/past-classes">View Past Classes</Link>
         </div>
       </div>
 
