@@ -19,9 +19,33 @@ const pastClasses = [
     hasNotebook: true,
     hasQuiz: true,
     hasVideo: true,
-    status: "completed"
+    status: "completed",
+    presentationLink: "/classes/sept-20-2025", // Internal class page
+    notebookLink: "/classes/sept-20-2025"
+  },
+  {
+    id: "sept-22-2025",
+    classNumber: "Class 1",
+    title: "Prompt Chaining for Agentic Design",
+    date: "September 22, 2025",
+    duration: "~2 hours",
+    attendees: 0,
+    description: "Day 1 dives into prompt chaining: why single prompts fail, how to build robust chains, and hands-on use cases. Includes slides, Colab notebook, quiz, and recording.",
+    topics: [
+      "Why single prompts fail for complex tasks",
+      "Building robust prompt chains",
+      "Structured outputs (JSON) between steps",
+      "Seven use cases with runnable scaffolds"
+    ],
+  hasPresentation: true,
+  hasNotebook: true,
+  hasQuiz: true,
+  hasVideo: false,
+  status: "completed",
+  presentationLink: "https://docs.google.com/presentation/d/1V1RHVM1X_6W5VregAgxXJxjCNV32m9HWiuer1E-Io5U/edit?usp=drive_link",
+  notebookLink: "https://colab.research.google.com/drive/1_KL-hzucqPDgqTaYexRQyyHHCC71tskZ",
+  homeworkLink: "https://colab.research.google.com/drive/1Yliia9XFS3uOxkgwdcMPfybt8e10gUCt"
   }
-  // Future classes will be added here
 ];
 
 export default function PastClasses() {
@@ -127,14 +151,34 @@ export default function PastClasses() {
                   {/* Available Materials */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {classItem.hasPresentation && (
-                      <span className="inline-flex items-center px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs">
+                      <a
+                        href={classItem.presentationLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-2 py-1 bg-blue-100 text-blue-800 rounded text-xs underline hover:text-blue-900"
+                      >
                         📊 Slides
-                      </span>
+                      </a>
                     )}
                     {classItem.hasNotebook && (
-                      <span className="inline-flex items-center px-2 py-1 bg-orange-100 text-orange-800 rounded text-xs">
+                      <a
+                        href={classItem.notebookLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-2 py-1 bg-orange-100 text-orange-800 rounded text-xs underline hover:text-orange-900"
+                      >
                         📓 Notebook
-                      </span>
+                      </a>
+                    )}
+                    {classItem.homeworkLink && (
+                      <a
+                        href={classItem.homeworkLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-2 py-1 bg-green-100 text-green-800 rounded text-xs underline hover:text-green-900"
+                      >
+                        🏠 Homework
+                      </a>
                     )}
                     {classItem.hasQuiz && (
                       <span className="inline-flex items-center px-2 py-1 bg-purple-100 text-purple-800 rounded text-xs">
