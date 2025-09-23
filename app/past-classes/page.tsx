@@ -40,11 +40,12 @@ const pastClasses = [
   hasPresentation: true,
   hasNotebook: true,
   hasQuiz: true,
-  hasVideo: false,
+  hasVideo: true,
   status: "completed",
   presentationLink: "https://docs.google.com/presentation/d/1V1RHVM1X_6W5VregAgxXJxjCNV32m9HWiuer1E-Io5U/edit?usp=drive_link",
   notebookLink: "https://colab.research.google.com/drive/1_KL-hzucqPDgqTaYexRQyyHHCC71tskZ",
-  homeworkLink: "https://colab.research.google.com/drive/1Yliia9XFS3uOxkgwdcMPfybt8e10gUCt"
+  homeworkLink: "https://colab.research.google.com/drive/1Yliia9XFS3uOxkgwdcMPfybt8e10gUCt",
+  videoLink: "https://www.youtube.com/watch?v=4FY3_pjdZ0g"
   }
 ];
 
