@@ -37,15 +37,40 @@ const pastClasses = [
       "Structured outputs (JSON) between steps",
       "Seven use cases with runnable scaffolds"
     ],
-  hasPresentation: true,
-  hasNotebook: true,
-  hasQuiz: true,
-  hasVideo: true,
-  status: "completed",
-  presentationLink: "https://docs.google.com/presentation/d/1V1RHVM1X_6W5VregAgxXJxjCNV32m9HWiuer1E-Io5U/edit?usp=drive_link",
-  notebookLink: "https://colab.research.google.com/drive/1_KL-hzucqPDgqTaYexRQyyHHCC71tskZ",
-  homeworkLink: "https://colab.research.google.com/drive/1Yliia9XFS3uOxkgwdcMPfybt8e10gUCt",
-  videoLink: "https://www.youtube.com/watch?v=4FY3_pjdZ0g"
+    hasPresentation: true,
+    hasNotebook: true,
+    hasQuiz: true,
+    hasVideo: true,
+    status: "completed",
+    presentationLink: "https://docs.google.com/presentation/d/1V1RHVM1X_6W5VregAgxXJxjCNV32m9HWiuer1E-Io5U/edit?usp=drive_link",
+    notebookLink: "https://colab.research.google.com/drive/1_KL-hzucqPDgqTaYexRQyyHHCC71tskZ",
+    homeworkLink: "https://colab.research.google.com/drive/1Yliia9XFS3uOxkgwdcMPfybt8e10gUCt",
+    videoLink: "https://www.youtube.com/embed/4FY3_pjdZ0g"
+  },
+  {
+    id: "sept-24-2025",
+    classNumber: "Class 2",
+    title: "Branching: Decision Paths in Agentic Workflows",
+    date: "September 24, 2025",
+    duration: "~2 hours",
+    attendees: 0,
+    description: "Day 2 explores branching logic in agentic design: how to create workflows that adapt and make decisions. Includes slides, Colab notebook, quiz, and recording.",
+    topics: [
+      "What is branching in agentic workflows?",
+      "When and why to use decision paths",
+      "Implementing conditional logic in chains",
+      "Debugging and testing branches",
+      "Build a branching workflow in Colab",
+      "Experiment with different decision criteria",
+      "Analyze real-world branching use cases"
+    ],
+    hasPresentation: true,
+    hasNotebook: true,
+    hasQuiz: true,
+    hasVideo: false,
+    status: "completed",
+    presentationLink: "https://docs.google.com/presentation/d/1CyCjGHC_v5r6feu841Ars7zJxriJaHQJfTLLeNpgKBY/edit?usp=drive_link",
+    notebookLink: "https://colab.research.google.com/drive/1tAZM9VnBsFL7nMqHCreZA15ICHAkspk6"
   }
 ];
 
@@ -186,12 +211,22 @@ export default function PastClasses() {
                         📝 Quiz
                       </span>
                     )}
-                    {classItem.hasVideo && (
-                      <span className="inline-flex items-center px-2 py-1 bg-red-100 text-red-800 rounded text-xs">
-                        🎥 Recording
-                      </span>
-                    )}
                   </div>
+                  {/* Embedded Video */}
+                  {classItem.hasVideo && classItem.videoLink && (
+                    <div className="w-full my-4">
+                      <iframe
+                        src={classItem.videoLink}
+                        frameBorder="0"
+                        width="100%"
+                        height="400"
+                        allowFullScreen
+                        className="rounded-lg shadow-lg"
+                        title={`Class Video - ${classItem.title}`}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      ></iframe>
+                    </div>
+                  )}
                 </div>
 
                 {/* Action Button */}
