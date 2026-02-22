@@ -11,10 +11,10 @@ export default function Class24Sept2025() {
     { id: "overview", label: "Class Overview", icon: "📚" },
     { id: "presentation", label: "Presentation", icon: "📊" },
     { id: "notebook", label: "Jupyter Notebook", icon: "📓" },
+    { id: "routing", label: "Routing-Notebook", icon: "🗺️" },
     { id: "quiz", label: "Quiz", icon: "📝" },
     { id: "video", label: "Class Recording", icon: "🎥" }
   ];
-
   return (
     <main>
       {/* Header */}
