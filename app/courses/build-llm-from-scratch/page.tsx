@@ -16,10 +16,12 @@ export default function BuildLLMFromScratch() {
         <header className="mb-12">
           <div className="mb-6">
             <Image
-              src="/images/courses/llm-from-scratch.png"
+              src="/images/courses/llm-from-scratch.webp"
               alt="Build LLM from Scratch Course"
               width={800}
               height={400}
+              sizes="(max-width: 1024px) 100vw, 800px"
+              quality={70}
               className="w-full h-64 object-cover rounded-lg shadow-lg"
             />
           </div>

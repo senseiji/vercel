@@ -28,10 +28,12 @@ export default function Courses() {
           </div>
           <div className="mb-4">
             <Image
-              src="/images/courses/ai_agents.png"
+              src="/images/courses/ai_agents.webp"
               alt="Agentic Design Patterns Course"
               width={500}
               height={250}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              quality={70}
               className="w-full h-48 object-cover rounded-lg"
             />
           </div>
@@ -87,10 +89,12 @@ export default function Courses() {
           </div>
           <div className="mb-4">
             <Image
-              src="/images/courses/llm-from-scratch.png"
+              src="/images/courses/llm-from-scratch.webp"
               alt="Build LLM from Scratch Course"
               width={500}
               height={250}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              quality={70}
               className="w-full h-48 object-cover rounded-lg"
             />
           </div>
@@ -140,10 +144,12 @@ export default function Courses() {
           </div>
           <div className="mb-4">
             <Image
-              src="/images/courses/ai-pipeline.png"
+              src="/images/courses/ai-pipeline.webp"
               alt="AI Content Creation Pipeline Course"
               width={500}
               height={250}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              quality={70}
               className="w-full h-48 object-cover rounded-lg"
             />
           </div>

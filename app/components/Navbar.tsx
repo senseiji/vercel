@@ -17,12 +17,14 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+            <Link href="/" prefetch={false} className="flex items-center hover:opacity-80 transition-opacity">
               <Image
                 src="/images/logo/MLA-logo.png"
                 alt="ML Academy"
                 width={180}
                 height={60}
+                sizes="180px"
+                quality={80}
                 className="h-12 w-auto"
                 priority
               />
@@ -34,30 +36,35 @@ export default function Navbar() {
             <div className="ml-10 flex items-baseline space-x-8">
               <Link 
                 href="/courses" 
+                prefetch={false}
                 className="text-gray-700 hover:text-[#76a9fa] px-3 py-2 text-lg font-medium transition-colors"
               >
                 Courses
               </Link>
               <Link 
                 href="/past-classes" 
+                prefetch={false}
                 className="text-gray-700 hover:text-[#76a9fa] px-3 py-2 text-lg font-medium transition-colors"
               >
                 Past Classes
               </Link>
               <Link 
                 href="/schedule" 
+                prefetch={false}
                 className="text-gray-700 hover:text-[#76a9fa] px-3 py-2 text-lg font-medium transition-colors"
               >
                 Schedule
               </Link>
               <Link 
                 href="/blogs" 
+                prefetch={false}
                 className="text-gray-700 hover:text-[#76a9fa] px-3 py-2 text-lg font-medium transition-colors"
               >
                 Blogs
               </Link>
               <Link 
                 href="/about" 
+                prefetch={false}
                 className="text-gray-700 hover:text-[#76a9fa] px-3 py-2 text-lg font-medium transition-colors"
               >
                 About Us
@@ -103,6 +110,7 @@ export default function Navbar() {
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
           <Link
             href="/courses"
+            prefetch={false}
             className="text-gray-700 hover:text-[#76a9fa] hover:bg-gray-100 block px-3 py-2 text-xl font-medium rounded-md transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
@@ -110,6 +118,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/past-classes"
+            prefetch={false}
             className="text-gray-700 hover:text-[#76a9fa] hover:bg-gray-100 block px-3 py-2 text-xl font-medium rounded-md transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
@@ -117,6 +126,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/schedule"
+            prefetch={false}
             className="text-gray-700 hover:text-[#76a9fa] hover:bg-gray-100 block px-3 py-2 text-xl font-medium rounded-md transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
@@ -124,6 +134,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/blogs"
+            prefetch={false}
             className="text-gray-700 hover:text-[#76a9fa] hover:bg-gray-100 block px-3 py-2 text-xl font-medium rounded-md transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >
@@ -131,6 +142,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/about"
+            prefetch={false}
             className="text-gray-700 hover:text-[#76a9fa] hover:bg-gray-100 block px-3 py-2 text-xl font-medium rounded-md transition-colors"
             onClick={() => setIsMenuOpen(false)}
           >

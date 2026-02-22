@@ -16,10 +16,12 @@ export default function AIContentCreationPipeline() {
         <header className="mb-12">
           <div className="mb-6">
             <Image
-              src="/images/courses/ai-pipeline.png"
+              src="/images/courses/ai-pipeline.webp"
               alt="AI Content Creation Pipeline Course"
               width={800}
               height={400}
+              sizes="(max-width: 1024px) 100vw, 800px"
+              quality={70}
               className="w-full h-64 object-cover rounded-lg shadow-lg"
             />
           </div>

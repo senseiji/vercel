@@ -251,7 +251,7 @@ export default function Class24Sept2025() {
             <p className="text-sm text-[var(--muted)]">Advanced Patterns</p>
           </div>
           <Link 
-            href="/classes/oct-6-2025"
+            href="/schedule"
             className="btn bg-[var(--accent)] text-[#0b0f17] hover:bg-[var(--accent)]/90"
           >
             Next Class →

@@ -16,6 +16,8 @@ export default function About() {
                   alt="Venkatesh Tadinada - Chief Instructor"
                   width={200}
                   height={200}
+                  sizes="200px"
+                  quality={80}
                   className="rounded-lg shadow-md mx-auto md:mx-0"
                 />
               </div>
@@ -49,6 +51,8 @@ export default function About() {
                   alt="Peeya Iwagoshi - Co-Instructor"
                   width={200}
                   height={200}
+                  sizes="200px"
+                  quality={80}
                   className="rounded-lg shadow-md mx-auto md:mx-0"
                 />
               </div>

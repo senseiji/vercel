@@ -25,10 +25,12 @@ export default function AgenticDesignPatterns() {
       {/* Course Banner Image */}
       <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
         <Image
-          src="/images/courses/ai_agents.png"
+          src="/images/courses/ai_agents.webp"
           alt="Agentic Design Patterns Course - AI Agents"
           width={960}
           height={400}
+          sizes="(max-width: 1024px) 100vw, 960px"
+          quality={70}
           className="w-full h-64 md:h-80 object-cover"
           priority
         />

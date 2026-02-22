@@ -31,6 +31,12 @@ const CONTENT: Record<string, { title: string; body: string }> = {
   },
 };
 
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return Object.keys(CONTENT).map((slug) => ({ slug }));
+}
+
 export default function PatternPage({ params }: { params: { slug: string } }) {
   const data = CONTENT[params.slug];
   if (!data) return notFound();

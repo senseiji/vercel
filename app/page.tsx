@@ -38,7 +38,7 @@ export default function Home() {
         { value: "3 months", label: "Average time to first AI job" }
       ],
       primaryCTA: { text: "Build Your First Agent →", href: "/courses/agentic-design-patterns" },
-      secondaryCTA: { text: "See Student Projects", href: "/projects" }
+      secondaryCTA: { text: "See Student Projects", href: "/courses" }
     },
     {
       badge: "💼 Career transformation guaranteed",
@@ -64,7 +64,7 @@ export default function Home() {
         { value: "24/7", label: "Expert support" }
       ],
       primaryCTA: { text: "See Course Projects →", href: "/courses" },
-      secondaryCTA: { text: "Try Free Preview", href: "/preview" }
+      secondaryCTA: { text: "Try Free Preview", href: "/courses/agentic-design-patterns" }
     },
     {
       badge: "⚡ Fast-track to AI mastery",
@@ -77,7 +77,7 @@ export default function Home() {
         { value: "Live", label: "Expert mentorship" }
       ],
       primaryCTA: { text: "Begin Transformation →", href: "/courses/agentic-design-patterns" },
-      secondaryCTA: { text: "Success Stories", href: "/testimonials" }
+      secondaryCTA: { text: "Success Stories", href: "/#success-stories" }
     }
   ];
 
@@ -153,12 +153,14 @@ export default function Home() {
             <Link 
               className="btn text-lg px-8 py-4 bg-[var(--accent)] hover:bg-[var(--accent)]/90 transition-colors" 
               href={currentHero.primaryCTA.href}
+              prefetch={false}
             >
               {currentHero.primaryCTA.text}
             </Link>
             <Link 
               className="btn bg-transparent border-2 border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17] text-lg px-8 py-4 transition-colors" 
               href={currentHero.secondaryCTA.href}
+              prefetch={false}
             >
               {currentHero.secondaryCTA.text}
             </Link>
@@ -222,17 +224,19 @@ export default function Home() {
         
         <div className="grid gap-8 lg:grid-cols-3 max-w-6xl mx-auto">
           <div className="card border-l-4 border-[var(--accent)] hover:shadow-xl transition-shadow">
-            <Link href="/courses/agentic-design-patterns">
+            <Link href="/courses/agentic-design-patterns" prefetch={false}>
               <h3 className="text-2xl font-bold mb-3 text-[var(--accent)] hover:underline cursor-pointer">
                 AI Agent Systems
               </h3>
             </Link>
             <div className="mb-4">
               <Image
-                src="/images/courses/ai_agents.png"
+                src="/images/courses/ai_agents.webp"
                 alt="AI Agents Course"
                 width={400}
                 height={200}
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                quality={70}
                 className="w-full h-48 object-cover rounded-lg"
               />
             </div>
@@ -258,27 +262,30 @@ export default function Home() {
               <Link 
                 className="btn !bg-green-600 hover:!bg-green-700 !text-white flex-1 text-center" 
                 href="/schedule"
+                prefetch={false}
               >
                 Register Now →
               </Link>
-              <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/agentic-design-patterns">
+              <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/agentic-design-patterns" prefetch={false}>
                 Details
               </Link>
             </div>
           </div>
 
           <div className="card border-l-4 border-purple-500 hover:shadow-xl transition-shadow opacity-90">
-            <Link href="/courses/build-llm-from-scratch">
+            <Link href="/courses/build-llm-from-scratch" prefetch={false}>
               <h3 className="text-2xl font-bold mb-3 text-purple-400 hover:underline cursor-pointer">
                 Custom Language Models
               </h3>
             </Link>
             <div className="mb-4">
               <Image
-                src="/images/courses/llm-from-scratch.png"
+                src="/images/courses/llm-from-scratch.webp"
                 alt="Build LLM from Scratch Course"
                 width={400}
                 height={200}
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                quality={70}
                 className="w-full h-48 object-cover rounded-lg"
               />
             </div>
@@ -304,24 +311,26 @@ export default function Home() {
               <button className="btn flex-1 opacity-60 cursor-not-allowed" disabled>
                 Coming Soon
               </button>
-              <Link className="btn bg-transparent border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white" href="/courses/build-llm-from-scratch">
+              <Link className="btn bg-transparent border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white" href="/courses/build-llm-from-scratch" prefetch={false}>
                 Preview
               </Link>
             </div>
           </div>
 
           <div className="card border-l-4 border-blue-500 hover:shadow-xl transition-shadow opacity-90">
-            <Link href="/courses/ai-content-creation-pipeline">
+            <Link href="/courses/ai-content-creation-pipeline" prefetch={false}>
               <h3 className="text-2xl font-bold mb-3 text-blue-400 hover:underline cursor-pointer">
                 AI Content Pipeline
               </h3>
             </Link>
             <div className="mb-4">
               <Image
-                src="/images/courses/ai-pipeline.png"
+                src="/images/courses/ai-pipeline.webp"
                 alt="AI Content Creation Pipeline"
                 width={400}
                 height={200}
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                quality={70}
                 className="w-full h-48 object-cover rounded-lg"
               />
             </div>
@@ -347,7 +356,7 @@ export default function Home() {
               <button className="btn flex-1 opacity-60 cursor-not-allowed" disabled>
                 Coming Soon
               </button>
-              <Link className="btn bg-transparent border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white" href="/courses/ai-content-creation-pipeline">
+              <Link className="btn bg-transparent border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white" href="/courses/ai-content-creation-pipeline" prefetch={false}>
                 Preview
               </Link>
             </div>
@@ -358,6 +367,7 @@ export default function Home() {
           <Link 
             className="btn bg-transparent border-2 border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17] text-lg px-8 py-4" 
             href="/courses"
+            prefetch={false}
           >
             View All Courses →
           </Link>
@@ -365,7 +375,7 @@ export default function Home() {
       </div>
 
       {/* Fast.ai Inspired Learning Philosophy */}
-      <div className="mb-20">
+      <div className="mb-20" id="success-stories">
         <div className="card bg-gradient-to-r from-[var(--card)] to-[var(--card)]/50 border-[var(--accent)]/20">
           <div className="text-center mb-8">
             <h2 className="text-4xl font-bold mb-4">Learn By Doing, Not Memorizing</h2>
@@ -504,12 +514,14 @@ export default function Home() {
             <Link 
               className="btn text-lg px-8 py-4 bg-[var(--accent)] hover:bg-[var(--accent)]/90 transition-colors" 
               href="/courses/agentic-design-patterns"
+              prefetch={false}
             >
               Start Learning Today →
             </Link>
             <Link 
               className="btn bg-transparent border-2 border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17] text-lg px-8 py-4 transition-colors" 
               href="/about"
+              prefetch={false}
             >
               Meet the Instructors
             </Link>
