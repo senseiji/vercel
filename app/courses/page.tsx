@@ -128,7 +128,7 @@ export default function Courses() {
           </p>
           
           <div className="flex space-x-3">
-            <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
+            <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2026</button>
             <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/build-llm-from-scratch">More Info</Link>
           </div>
         </div>
@@ -185,7 +185,7 @@ export default function Courses() {
           </p>
           
           <div className="flex space-x-3">
-            <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
+            <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2026</button>
             <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/ai-content-creation-pipeline">More Info</Link>
           </div>
         </div>
@@ -219,7 +219,7 @@ export default function Courses() {
           </p>
           
           <div className="flex space-x-3">
-            <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
+            <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2026</button>
             <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/natural-language-processing">More Info</Link>
           </div>
         </div>
@@ -253,7 +253,7 @@ export default function Courses() {
           </p>
           
           <div className="flex space-x-3">
-            <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
+            <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2026</button>
             <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/model-context-protocol">More Info</Link>
           </div>
         </div>
@@ -287,7 +287,7 @@ export default function Courses() {
           </p>
           
           <div className="flex space-x-3">
-            <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2025</button>
+            <button className="btn opacity-50 cursor-not-allowed" disabled>Coming 2026</button>
             <Link className="btn bg-transparent border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[#0b0f17]" href="/courses/slm-finetuning">More Info</Link>
           </div>
         </div>

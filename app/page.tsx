@@ -303,7 +303,7 @@ export default function Home() {
             </div>
             
             <div className="mb-4">
-              <span className="inline-block bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-2">Coming Q4 2025</span>
+              <span className="inline-block bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-2">Coming Q4 2026</span>
               <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-3 py-1 rounded-full text-sm">16 weeks</span>
             </div>
             
@@ -348,7 +348,7 @@ export default function Home() {
             </div>
             
             <div className="mb-4">
-              <span className="inline-block bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-2">Coming Q4 2025</span>
+              <span className="inline-block bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-2">Coming Q4 2026</span>
               <span className="inline-block bg-[var(--card)] text-[var(--muted)] px-3 py-1 rounded-full text-sm">10 weeks</span>
             </div>
             
